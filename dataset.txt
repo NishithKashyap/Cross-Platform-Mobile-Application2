@@ -1,0 +1,110 @@
+1. Mysore Palace
+	12.365455,76.648270
+	Sayyaji Rao Rd, Agrahara, Chamrajpura, Mysuru, Karnataka 570001
+2. Virupaksha Temple
+	15.335365,76.459025
+	Hampi, Karnataka 583239
+3. Lalbagh Botanical Garden
+	12.951109,77.584809
+	Mavalli, Bengaluru, Karnataka 560004
+4. Abbey Falls Madkeri
+	12.458427,75.716624
+	Abbey falls, madkeri, Hoskeri, Karnataka 571252
+5. Cubbon Park
+	12.976679,77.592933
+	Kasturba Road, Behind High Court of Karnataka Ambedkar Veedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001 
+6. Brindavan Gardens
+	12.421914,76.572505
+	KRS Dam Road, Mandya, Karnataka 571607
+7. Bangalore Palace
+	12.999111,77.592171
+	Vasanth Nagar, Bengaluru, Karnataka 560052
+8. Dubare Elephant Camp
+	12.971632,77.600369
+	Tourism House, #8, Papanna Lane, St. Marks Road, Bengaluru, Karnataka 560001
+9. Bannerghatta Biological Park
+	12.800588,77.577069
+	Bannerghatta Rd, Bannerughatta, Bengaluru, Karnataka 560083
+10. Kudremukh
+	13.223088,75.250651
+	Karnataka	
+11. Jog Falls
+	14.238584,74.814129
+	Jog Falls, Karnataka 577435
+12. Tipu Sultan's Summer Palace
+	12.959634,77.573620
+	Tippu Sultan Palace Rd, Chamrajpet, Bengaluru, Karnataka 560018
+13. Shivanasamudra Falls
+	12.302832,77.177202
+	Karnataka
+14. Raja's Seat
+	12.414483,75.736957
+	Stuart Hill, Madikeri, Karnataka 571201
+15. Sri Chamundeshwari Devi Temple
+	12.272784,76.670852
+	Chamundeshwari Temple, Chamundi Hill Rd, Vijay Nagar, Mysuru, Karnataka 570010
+16. Mysore Zoo
+	12.302557,76.663935
+	Zoo, Main Rd, Indira Nagar, Mysuru, Karnataka 570010
+17. Bhadra Wildlife Sanctuary
+	13.695155,75.635300
+	Behind Ranganathaswamy Temple, Tarikere, Lakkavalli, Karnataka 577115
+18. Nisargadhama
+	12.441291,75.936234
+	Karnataka 571234
+19. Vidhana Soudha
+	12.980004,77.591238
+	Ambedkar Bheedhi, Sampangi Rama Nagara, Bengaluru, Karnataka 560001
+20. Badami Cave Temples
+	15.916960,75.691015
+	Badami, Karnataka 587201
+21. Gol Gumbaz
+	16.830611,75.736137
+	Jadar Galli, Vijayapura, Karnataka 586104
+22. Vijaya Vitthala Temple
+	15.342597,76.475330
+	Hampi, Karnataka 583239
+23. Namdroling Monastery
+	12.431041,75.966561
+	Arlikumari, Bylakuppe, Karnataka 571104
+24. Ranganathittu Bird Sanctuary
+	12.424507,76.656210
+	Ranganathittu Road, District Mandya, Srirangapatna, Karnataka 571438
+25. Visvesvaraya Industrial & Technological Museum
+	12.975530,77.596366
+	Near Chinna Swamy Stadium, Kasturba Rd, Ambedkar Veedhi, Bengaluru, Karnataka 560001
+26. St. Philomena's Cathedral, Mysore
+	12.321388,76.658253
+	Lourdes Nagar, Ashoka Rd, Lashkar Mohalla, Mysuru, Karnataka 570001
+27. KrishnaRajaSagara Dam
+	12.425812,76.572449
+	Karnataka
+28. Jaganmohan Palace Art Gallery And Auditorium
+	12.307084,76.649839
+	Deshika Rd, opp. City Bus Stand, Devaraja Mohalla, Chamrajpura, Mysuru, Karnataka 570024
+29. Kukke Shri Subrahmanya Temple
+	12.664023,75.615866
+	Mardala - Sullia, Subrahamanya, Karnataka 574238
+30. Karanji Lake
+	12.303993,76.673482
+	Jockey Quarters, Mysuru, Karnataka 570011
+31. Nandi Temple
+	12.284660,76.667944
+	Chamundi Hill Rd, Chamundi Hill, Mysuru, Karnataka 570010
+32. Mahabaleshwar Temple
+	14.543806,74.316398
+	Koti Teertha Road, Kotiteertha, Gokarna, Karnataka 581326
+34. Sringeri
+	13.418809,75.252083
+	Sri Math, Sringeri, Karnataka 577139
+35. Hornadu
+	13.277677, 75.343823
+	Hornadu, Karnataka 577181
+36. Dharmasthala
+	12.950550, 75.380563
+	SH 37, Dharmasthala, Karnataka 574216
+37.	Pattadkal temples
+	15.949072, 75.816307
+	Pattadakal, Karnataka 587201
+38. Aihole
+	16.019725, 75.884199

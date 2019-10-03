@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Display driving directions</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css' type='text/css' />
+<div id='map' onload="testfunc()"></div>
+
+<script>
+function getParamValue(paramName)
+{
+    var url = window.location.search.substring(1); //get rid of "?" in querystring
+    var qArray = url.split('&'); //get key-value pairs
+    for (var i = 0; i < qArray.length; i++) 
+    {
+        var pArr = qArray[i].split('='); //split key and value
+        if (pArr[0] == paramName) 
+            return pArr[1]; //return value
+    }
+}    
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5pcnVkaC1nOTkiLCJhIjoiY2p6MDAwZ29pMDBqbTNjbHY5YTJvYmw1bCJ9.FE7CXvnxLVJdLRQhjGWx4w';
+var b = getParamValue("coord");
+function testfunc(){
+    console.log(b);
+}
+var coordin = b.split(',');
+var lng = parseFloat(coordin[1]);
+var lat = parseFloat(coordin[0]);
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [lng,lat],
+    zoom: 13
+});
+var marker = new mapboxgl.Marker()
+.setLngLat([lng,lat])
+.addTo(map)
+
+
+var geolocate = new mapboxgl.GeolocateControl();
+var ulng,ulat;
+map.addControl(geolocate);
+var directions = new MapboxDirections({
+    accessToken: mapboxgl.accessToken
+          
+})
+  map.addControl(directions, 'top-left');
+geolocate.on('geolocate', function(e) {
+      ulng = e.coords.longitude;
+      ulat = e.coords.latitude;
+      var start=[ulng,ulat];
+      var dest=[lng,lat];  
+          //Fixed the no line error
+    directions.on('route',()=>{
+      try {
+         directions.mapState()
+      }catch(e){
+        console.error(e);
+      }
+    })  
+
+  directions.setOrigin(start);
+  directions.setDestination(dest);
+});
+   
+map.addControl(new mapboxgl.NavigationControl());
+ 
+/*   
+map.addControl(new MapboxDirections({
+    accessToken: mapboxgl.accessToken
+}), 'top-left');
+*/    
+</script>
+
+</body>
+</html>

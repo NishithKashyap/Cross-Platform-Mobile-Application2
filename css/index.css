@@ -1,0 +1,125 @@
+#menu{
+  width: 35px;
+  height: 5px;
+  background-color: azure;
+  margin: 6px 0;
+}
+#menubar{
+    margin: 6px;
+    margin-top: 10px;
+}
+.collapsible {
+  background-color: darkblue;
+  color: aliceblue;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin: 18px;
+  padding: 18px;
+  width: 96%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+#id1{
+    background-color: azure;
+    color: darkslateblue;
+    font-family: inherit;
+    font-size: 20px;
+    margin: 18px;
+    padding: 18px;
+    width: 92.5%;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+} 
+#ul1{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.bottom-right {
+  font-size: 20px;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+p{
+    color: aliceblue;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+}
+button{
+    margin: 10px;
+    font-size: 15px;
+    border: none;
+    opacity: 0.5;
+}
+h1{
+    color: aliceblue;
+}
+h2{
+    color: lightcyan;
+}

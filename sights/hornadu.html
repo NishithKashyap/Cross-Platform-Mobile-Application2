@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Overview</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <style>
+        @media (max-width: 600px) {
+            .facet_sidebar {
+                font-size: 1em;
+            }
+        }    
+
+        *:focus {
+            outline: none;
+        }
+            #nav{
+                border: none;
+                padding: 15px;
+                background-color: azure;
+            }
+            
+            .content .btn:hover{
+                background-color: darkblue;
+            }    
+            #temp,#summary,#humidity{
+                color: darkslateblue;
+            }
+            #btn2{
+                margin-left: 18px;
+                padding: 15px;
+                background-color: darkslateblue;
+                color: aliceblue;
+                font-size: 20px;
+            }
+        </style>
+
+        <script src="../js/sights.js"></script>
+         <meta name="viewport" content="width=device-width; height=device-height; maximum-scale=2; initial-scale=1.0; user-scalable=yes"/>
+        <script>
+        </script>
+
+    </head>
+    <body class="w3-mobile" style="background-image: url(../img/background.png)">
+        
+        
+        <script src="../js/index.js"></script>
+        <script src="../js/sights.js"></script>
+        <div id="menubar" onclick="openNav()">
+        <div id="menu"></div>
+        <div id="menu"></div>
+        <div id="menu"></div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" id="l1">Home</a>
+            <a href="why.html" id="l1">About</a>
+            <a href="cities.html" id="l1">Cities</a>
+            <a href="sights.html" id="l1">Top sights</a>
+            <a href="rec.html" id="l1">Recommendation</a>
+        </div>
+        <br>
+         <center><h1 style="color: aliceblue">Top Places</h1></center>
+        <h2 style="color: aliceblue; margin-left: 19px;">Hornadu</h2>
+        <p style="margin-left: 19px; margin-bottom: -8px;">Content</p>
+        <input type ="button" class="collapsible" value="View Details"  onclick="getcoord(entries.Hornadu)">
+        <div class="content">
+          <iframe src="map.html" id="FrameID" width="96%" height="500px" style="border: none; margin: 18px;">
+          </iframe>
+          <p id="id1">
+               Hornadu, Karnataka 57718
+            <br> 
+
+          </p>
+            <button onclick="getweather()" id="btn2">Current Weather</button>
+            <div style="margin-left: 20px">
+            <p id="temp">Temperature</p>
+            <p id="summary">Summary</p>
+            <p id="humidity">Humidity</p>
+            </div>
+        </div>
+        
+                <center>
+            <a href="../sights.html">
+                <button id="nav">BACK</button></a>
+        </center>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
+        
+
+
+
+

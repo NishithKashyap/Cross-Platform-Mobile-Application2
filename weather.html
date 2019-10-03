@@ -1,0 +1,69 @@
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <title> Weather </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+         <style>
+            html {
+  font-family: "Avenir Next", Helevetica, sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+         
+         </style>
+     </head>
+
+     <body>
+        <h1><div id="temp"></div>
+        <h1><div id="summary"></div></h1>
+        <h1><div id="humidity"></div></h1>
+        <h2><div id="location"></div></h2>
+     </body>
+    
+    
+    <script>
+        function weather() {
+  var location = document.getElementById("location");
+  var apiKey = "bdd74ce4713b6f29757847ce4861b47b";
+  var url = "https://api.forecast.io/forecast/";
+
+  navigator.geolocation.getCurrentPosition(success, error);
+
+  function getweather(position) {
+    latitude = position.coords.latitude;
+    longitude = position.coords.longitude;
+
+    location.innerHTML =
+      "Latitude is " + latitude + "° Longitude is " + longitude + "°";
+
+    $.getJSON(
+      url + apiKey + "/" + latitude + "," + longitude + "?callback=?",
+      function(data) {
+        $("#temp").html(data.currently.temperature + "° F");
+        $("#summary").html(data.currently.summary);
+        $("#humidity").html(data.currently.humidity);
+        
+      }
+    );
+  }
+
+  function error() {
+    location.innerHTML = "Unable to retrieve your location";
+  }
+
+  location.innerHTML = "Locating...";
+}
+
+weather();
+    </script>
+  </html>
